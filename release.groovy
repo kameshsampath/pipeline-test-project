@@ -9,7 +9,7 @@ def externalImages() {
 }
 
 def repo() {
-  return 'fabric8io/pipeline-test-project'
+  return 'kameshsampath/pipeline-test-project'
 }
 
 def stage() {
@@ -45,11 +45,11 @@ def release(project) {
     useGitTagForNextVersion = true
     helmPush = false
     groupId = 'io.fabric8'
-    githubOrganisation = 'fabric8io'
+    githubOrganisation = 'kameshsampath'
     artifactIdToWatchInCentral = 'pipeline-test-project'
     artifactExtensionToWatchInCentral = 'jar'
     promoteToDockerRegistry = 'docker.io'
-    dockerOrganisation = 'fabric8'
+    dockerOrganisation = 'kameshsampath'
     imagesToPromoteToDockerHub = imagesBuiltByPipline()
     extraImagesToTag = externalImages()
   }
