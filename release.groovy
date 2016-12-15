@@ -69,6 +69,8 @@ def documentation(stagedProject) {
   generateWebsiteDocs {
     project = stagedProject
     artifactId = projectArtifactId
+    gitUser = "kameshsampath"
+    gitEmail = "kamesh.sampath@hotmail.com"
   }
 }
 
