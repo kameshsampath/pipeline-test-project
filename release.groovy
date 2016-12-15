@@ -63,15 +63,11 @@ def mergePullRequest(prId) {
 
 }
 
-def documentation(project) {
-  println("PROJECT --> ${project}")
+def documentation(proj) {
   Model m = readMavenPom file: 'pom.xml'
   def projectArtifactId = m.artifactId
-  def stagedProject = project[0]
-  def releaseVersion = project[1]
   generateWebsiteDocs {
-    project = stagedProject
-    docVersion = releaseVersion
+    project = proj
     artifactId = projectArtifactId
   }
 }
