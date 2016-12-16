@@ -9,7 +9,7 @@
   </parent>
   <groupId>io.fabric8</groupId>
   <artifactId>pipeline-test-project</artifactId>
-  <version>0.0.99-SNAPSHOT</version>
+  <version>0.1.44</version>
   <name>pipeline-test-project</name>
   <description>Demo project for Spring Boot</description>
 
